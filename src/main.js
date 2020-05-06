@@ -56,6 +56,7 @@ const renderBoard = (boardComponent, tasks) => {
 
   if (isAllTasksInArchived) {
     render(boardComponent.getElement(), new NoTasksComponent().getElement());
+
     return;
   }
 
