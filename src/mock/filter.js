@@ -15,9 +15,9 @@ const getTodayTasks = (tasks) => {
   }).length;
 };
 
-const getFavouriteTasks = (tasks) => {
+const getFavoriteTasks = (tasks) => {
   return tasks.filter((task) => {
-    return task.isFavourite;
+    return task.isFavorite;
   }).length;
 };
 
@@ -45,8 +45,8 @@ const generateFilters = (tasks) => {
       name: `today`,
       count: getTodayTasks(tasks),
     }, {
-      name: `favourites`,
-      count: getFavouriteTasks(tasks),
+      name: `favorites`,
+      count: getFavoriteTasks(tasks),
     }, {
       name: `repeating`,
       count: getRepeatingTasks(tasks),

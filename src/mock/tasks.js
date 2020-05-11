@@ -50,7 +50,7 @@ const generateTask = () => {
     dueDate,
     repeatingDays: dueDate ? DefaultRepeatingDays : generateRepeatingDays(),
     isArchive: Math.random() > 0.5,
-    isFavourite: Math.random() > 0.5,
+    isFavorite: Math.random() > 0.5,
   };
 };
 
